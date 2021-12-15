@@ -9,4 +9,4 @@
 `*/5 * * * * /mnt/da/CCTV/photo.sh d`
 
 # 图片转视频
-find -name *.jpg | sort | xargs cat | ffmpeg -f image2pipe -r 30 -vcodec mjpeg -i - -vcodec libx264 out.mp4
+`find -name *.jpg | sort | xargs cat | ffmpeg -f image2pipe -r 30 -vcodec mjpeg -i - -vcodec libx264 out.mp4`
